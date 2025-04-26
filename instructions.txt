@@ -1,0 +1,72 @@
+# Parallel Sorting Algorithms using OpenMP and MPI
+
+This project implements Merge Sort and Quick Sort in Sequential, OpenMP, and MPI versions. It provides scripts to benchmark, validate, 
+and visualize the performance improvements from parallelization.
+
+
+
+
+# Project Files
+
+generate_input.c : Create random input data
+sequential_merge.c / sequential_quick.c : Sequential sorting
+openmp_merge.c / openmp_quick.c : OpenMP parallel sorting
+mpi_merge.c / mpi_quick.c : MPI parallel sorting
+test.c : Validate sorting correctness
+benchmark.py : Plot graphs and save metrics
+Makefile : Easy build and run commands
+
+
+
+
+Setup
+
+Install C compiler (gcc/clang), MPI (e.g., OpenMPI) and install Python libraries:
+pip install matplotlib numpy
+
+
+Build Commands:
+make clean
+make all
+
+
+Generate Input:
+./generate_input 100000 input.txt
+
+
+Run Programs
+Sequential or OpenMP:
+./program_name <array_size> <input_file> [--test]
+Example:
+./sequential_merge 100000 input.txt
+
+
+MPI:
+mpirun -np 4 ./mpi_merge 100000 input.txt
+
+
+Test Correctness
+./test program_name 100000 input.txt
+
+
+NOTE:
+Once a program gets executed, note down the execution time as we need to fill those values in the benchmark.py file to get the plots
+
+
+Benchmark and Plot
+python3 benchmark.py
+
+Generates:
+execution_time_bar.png
+speedup_bar.png
+efficiency_bar.png
+metrics.csv
+
+
+Cleanup
+make clean
+
+
+Notes
+Default 4 OpenMP threads and 4 MPI processes.
+MPI programs use warm-up to skip setup time in measurements.
