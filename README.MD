@@ -2,27 +2,28 @@
 
 ## Project Description
 
-This project implements and benchmarks Merge Sort and Quick Sort using both Sequential and Parallel (OpenMP, MPI) techniques.  
-It evaluates the performance of parallel sorting strategies by comparing execution times and speedup across varying input sizes, highlighting scalability on multi-threaded and distributed systems.
-
-The project demonstrates how algorithm design and parallel models impact sorting efficiency at different scales.
+This project implements and benchmarks Merge Sort and Quick Sort using Sequential, OpenMP, and MPI techniques.  
+It evaluates and compares execution times and speedup across varying input sizes to demonstrate the impact of parallelism on sorting efficiency.
 
 ---
 
-## Installation and Usage
+## How to Run the Code
 
-All setup instructions, compilation steps, and usage details are provided in the `instructions.txt` file included in this repository.
+- Clone the repository.
+- Follow the setup, build, and execution instructions provided in the `instructions.txt` file.
+- In short:
+  - Generate input using `generate_input`.
+  - Compile programs using `make all`.
+  - Run sequential, OpenMP, or MPI versions as needed.
+  - Record execution times for analysis using `benchmark.py`.
 
-Please refer to `instructions.txt` for detailed guidance on:
-
-1. How to generate input
-2. How to compile the programs
-3. How to run and test each implementation
-4. How to benchmark and visualize the results
+For detailed steps and commands, **please refer to** `instructions.txt` inside this repository.
 
 ---
 
 ## Team Members
 
 - **Naren Sivakumar Rajalakshmi** (nsivaku6)
+
+---
 
