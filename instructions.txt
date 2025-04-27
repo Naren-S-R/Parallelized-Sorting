@@ -54,7 +54,7 @@ Once a program gets executed, note down the execution time as we need to fill th
 
 
 Benchmark and Plot
-python3 benchmark.py
+python3 benchmark_metrics.py
 
 Generates:
 execution_time_bar.png

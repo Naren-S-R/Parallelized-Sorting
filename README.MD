@@ -15,7 +15,7 @@ It evaluates and compares execution times and speedup across varying input sizes
   - Generate input using `generate_input`.
   - Compile programs using `make all`.
   - Run sequential, OpenMP, or MPI versions as needed.
-  - Record execution times for analysis using `benchmark.py`.
+  - Record execution times for analysis using `benchmark_metrics.py`.
 
 For detailed steps and commands, **please refer to** `instructions.txt` inside this repository.
 
